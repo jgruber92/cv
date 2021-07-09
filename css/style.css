@@ -21,10 +21,6 @@ p{
       font-family: 'Montserrat', sans-serif;
 }
 
-img{
-      width: 25%;
-}
-
 a:visited{
       text-decoration: none;
 }
@@ -40,6 +36,7 @@ hr{
       border-right: none;
       padding-bottom: 10px;
       width: 10%;
+      clear: both;
 }
 
 
@@ -51,7 +48,11 @@ hr{
       position: relative;
       width: 100%;
       margin: 0 auto;
-      height: 750px;
+      height: 100vh;
+}
+
+.middle-container{
+      margin-bottom: 50px;
 }
 
 .bottom-container{
@@ -61,28 +62,6 @@ hr{
       position: relative;
 }
 
-.intro-text{
-      position: absolute;
-      top: 280px;
-      left: 400px;
-      text-align: left;
-}
-
-.intro-image{
-      position: absolute;
-      right: 400px;
-      top: 170px;
-      border-radius: 100%;
-}
-
-.icons{
-      position:absolute;
-      height: 30px;
-      width: 30px;
-      top: 435px;
-      left: 400px;
-}
-
 .navigation{
       height: 150px;
       width: 100%;
@@ -90,20 +69,49 @@ hr{
 }
 
 .nav{
-      position: absolute;
-      width: 100%;
-      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(4, 200px);
+      align-items: center;
+      justify-content: center;
 }
 
 .navigation-links{
-      display: inline;
-      padding-top: 45px;
-      color: black;
+      align-self: center;
+      margin-top: 20px;
       
+      display: inline;
+      color: black;    
 }
-
 .navigation-links:hover{
       color: azure;
+}
+
+.intro-container{
+      width: 60%;
+      margin: 0 auto 0 auto;
+}
+.intro-sub-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.intro-text{
+      text-align: left;
+      align-self: center;
+}
+
+.computer-image{
+      align-self: center;
+      width: 550px;
+}
+
+.icons{
+      height: 30px;
+      width: 30px;
 }
 
 .about-row{
@@ -116,6 +124,7 @@ hr{
       float: left;
       border-radius: 100%;
       margin-right: 50px;
+      width: 200px;
 }
 
 .about-text{
@@ -129,35 +138,68 @@ hr{
       padding: 50px;
 }
 
-.skills{
-      width: 50%;
-      margin: 0 auto;
-      text-align: center;
+.skill-row{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 250px;
+      margin-right: 100px;
+}
+
+.skill-grid{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 100px;
+      margin-right: 100px;
 }
 
 .skills-header{
       text-align: center;
 }
 
-.skills-text{
+.skill-text{
+      text-align: center;
+      padding: 50px;
+      font-weight: bolder;
+}
+
+.skill-icon{
+      width: 80px;
+      margin-bottom: 20px;
+}
+
+.skill-div{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+.skill-span{
+      padding-top: 40px;
       text-align: left;
 }
 
-.skills-icon{
-      display: block;
+.skills-photo{
+      width: 800px;
 }
 
 .skill{
       padding: 20px
 }
 
-.footer-text{
-      display: inline;
-      padding-top: 45px;
+.footer{
+      display: box;
+      padding-top: 30px;
       color: white;
-      position: absolute;
-      bottom: 50px;
-      left: 720px;
+}
+
+.footer-text{
+      padding-bottom: 10px;
+
+}
+
+.spacer{
+      height: 50px;
 }
 
 /* <-------------------ID Tags -------------------> */
@@ -166,7 +208,6 @@ hr{
 #projects-link,
 #skills-link,
 #contact-link{
-      margin: 50px;
       font-size: 20pt;
 }
 
