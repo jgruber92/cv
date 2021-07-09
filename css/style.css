@@ -1,0 +1,186 @@
+/* <-------------------Element Tags -------------------> */
+
+body{
+      margin: 0%;
+      text-align: center;
+
+} 
+h1{
+      margin: 0 auto 0;
+      font-size: 60pt;
+      font-family: 'Permanent Marker', cursive;
+}
+
+h3{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800; 
+}
+
+p{
+      margin: 0 auto 0;
+      font-family: 'Montserrat', sans-serif;
+}
+
+img{
+      width: 25%;
+}
+
+a:visited{
+      text-decoration: none;
+}
+
+a{
+      text-decoration: none;
+}
+
+hr{
+      border: dotted #379f8c 6px;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      padding-bottom: 10px;
+      width: 10%;
+}
+
+
+
+/* <-------------------Class Tags -------------------> */
+
+.top-container{
+      background-color: #379f8c;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      height: 750px;
+}
+
+.bottom-container{
+      background-color: black;
+      margin-bottom: 0;
+      height: 150px;
+      position: relative;
+}
+
+.intro-text{
+      position: absolute;
+      top: 280px;
+      left: 400px;
+      text-align: left;
+}
+
+.intro-image{
+      position: absolute;
+      right: 400px;
+      top: 170px;
+      border-radius: 100%;
+}
+
+.icons{
+      position:absolute;
+      height: 30px;
+      width: 30px;
+      top: 435px;
+      left: 400px;
+}
+
+.navigation{
+      height: 150px;
+      width: 100%;
+      position: relative;
+}
+
+.nav{
+      position: absolute;
+      width: 100%;
+      margin: 20px auto;
+}
+
+.navigation-links{
+      display: inline;
+      padding-top: 45px;
+      color: black;
+      
+}
+
+.navigation-links:hover{
+      color: azure;
+}
+
+.about-row{
+      width: 50%;
+      margin: 100px auto 100px auto;
+}
+
+.about-image{
+      
+      float: left;
+      border-radius: 100%;
+      margin-right: 50px;
+}
+
+.about-text{
+      text-align: left;
+      line-height: 2;
+      margin-top: 20px;
+}
+
+.projects-text{
+      text-align: center;
+      padding: 50px;
+}
+
+.skills{
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+}
+
+.skills-header{
+      text-align: center;
+}
+
+.skills-text{
+      text-align: left;
+}
+
+.skills-icon{
+      display: block;
+}
+
+.skill{
+      padding: 20px
+}
+
+.footer-text{
+      display: inline;
+      padding-top: 45px;
+      color: white;
+      position: absolute;
+      bottom: 50px;
+      left: 720px;
+}
+
+/* <-------------------ID Tags -------------------> */
+
+#about-link,
+#projects-link,
+#skills-link,
+#contact-link{
+      margin: 50px;
+      font-size: 20pt;
+}
+
+#hello-text{
+      padding-bottom: 0;
+      font-size: 20pt;
+      font-family: 'Roboto', sans-serif;
+}
+
+#linkedin-icon{
+  border-radius: 5px;    
+}
+
+#github-icon{
+      left: 440px;
+      border-radius: 100px;
+}
